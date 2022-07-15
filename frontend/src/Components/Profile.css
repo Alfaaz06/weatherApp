@@ -1,0 +1,147 @@
+.profilePage {
+    padding: 5px;
+    background: url('../../public/weather_icons/Haze.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+.time {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3rem;
+    justify-content: space-between;
+}
+
+.logdiv {
+    padding: 3rem;
+    padding-right: 2rem;
+}
+
+.logout {
+    cursor: pointer;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1px 10px;
+    float: right;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.quote {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quote>h1>i {
+    margin: 2rem 0;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.delete>h2 {
+    cursor: pointer;
+}
+
+.one,
+.two {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dataBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img>img {
+    height: 100px;
+}
+
+@media (max-width:900px) {
+    .time {
+        font-size: 1rem;
+    }
+    .greeting {
+        font-size: 0.8rem;
+    }
+    .quote {
+        font-size: 0.7rem;
+        margin: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+    .card2 {
+        height: 100px;
+        width: 100%;
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+    .dataBox {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .delete {
+        justify-content: flex-start;
+        height: 5px;
+    }
+    .img>img {
+        height: 60px;
+    }
+    .img {
+        padding-bottom: 10px;
+    }
+    .one,
+    .two {
+        flex-direction: column;
+        height: 70%;
+        width: fit-content;
+    }
+    .greeting {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    .logdiv {
+        padding: 1rem;
+        padding-right: 0rem;
+    }
+    .logout {
+        font-size: 1rem;
+    }
+}

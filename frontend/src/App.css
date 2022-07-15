@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.heading {
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(81, 138, 187);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
