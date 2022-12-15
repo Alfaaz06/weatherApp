@@ -13,7 +13,7 @@ app.use('/api/v1', Weather);
 app.use('/api/v1', User);
 
 // app.use(express.static(path.resolve(" ./frontend/build")));
-app.use(express.static(path.resolve("./frontend/build")));
-app.get('/*', function(req, res) {
-    res.sendFile(path.resolve("./frontend/build/index.html"));
-});
+// app.use(express.static(path.resolve("./frontend/build")));
+// app.get('/*', function(req, res) {
+//     res.sendFile(path.resolve("./frontend/build/index.html"));
+// });

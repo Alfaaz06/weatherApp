@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { getWeather } from '../Actions/action';
 import { getUser, savePlace } from '../Actions/userAction';
-
+import Loading from './Loading'
 import './Left.css'
 
 
@@ -42,7 +42,7 @@ const Left = () => {
     const { weather } = useSelector(state => state.weather);
 
     if (!weather) {
-        return <div>Loading</div>
+        return <Loading />
     }
 
     const { current } = weather;

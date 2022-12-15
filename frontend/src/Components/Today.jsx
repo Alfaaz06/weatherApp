@@ -3,12 +3,13 @@ import { useSelector } from 'react-redux'
 import "swiper/css";
 import './Today.css'
 import Card from './Card'
+import Loading from './Loading'
 
 const Right = () => {
 
     const { weather } = useSelector(state => state.weather);
     if (!weather) {
-        return <div>Loading...</div>
+        return <Loading />
     }
     const { hourly } = weather;
 
